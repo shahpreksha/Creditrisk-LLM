@@ -5,8 +5,9 @@ The workflow combines **structured loan features (LendingClub dataset)** with **
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
+```text
 src/
 │── data_ingestion.py # Loads LendingClub & CFPB datasets into parquet format
 │── add_cfpb_cohorts.py # Aggregates CFPB complaints by ZIP3 × Year, merges with LendingClub
@@ -28,10 +29,10 @@ src/
 └── archive/
 └── train_text.py # Unused (ID mismatch prevented merge of numeric & text rows)
 
-
+```
 ---
 
-## 🚀 Workflow Overview
+## Workflow Overview
 
 1. **Data Ingestion**  
    Structured LendingClub loans and CFPB complaint data are loaded and preprocessed into parquet format.  
@@ -58,7 +59,7 @@ src/
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 - Adding CFPB-derived sentiment and complaint counts **improved ROC-AUC and PR-AUC by ~1–2%** over the baseline model.  
 - SHAP analysis confirmed that **temporal + complaint features** rank alongside traditional credit factors.  
@@ -66,7 +67,7 @@ src/
 
 ---
 
-## 🛠️ Tools and Libraries
+## Tools and Libraries
 
 - Python 3.11  
 - **Pandas, NumPy** – data handling  
@@ -79,16 +80,9 @@ src/
 
 ---
 
-## 📑 Project Proposal & Report
+## Project Proposal & Report
 
 - `Project Proposal - LLM-Driven Credit Risk Assessment for Loan Approvals.pdf` – initial research plan  
 - `MRP_Report.pdf` – final project report including methodology, experiments, and findings  
 
 ---
-
-## ▶️ How to Run
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>

@@ -1,0 +1,31 @@
+# Core
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Gradient boosting
+xgboost
+
+# Hyperparameter optimization
+optuna
+
+# Explainability
+shap
+
+# Experiment tracking (you logged to MLflow)
+mlflow
+
+# Jupyter / EDA
+jupyter
+notebook
+ipykernel
+
+# File formats
+pyarrow
+fastparquet
+
+# Text processing (CFPB features)
+nltk
+textblob
